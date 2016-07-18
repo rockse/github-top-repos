@@ -2,4 +2,7 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Find Top 5 Repositories of Github users
+  form(name="search_repo", method="post")
+    input(type="text", name="username", placeholder="Enter Username")
+    input(type="submit", value="Find")
